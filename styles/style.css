@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
+:root {
+  --color-primario: #000000;
+  --color-secundario: #f6f6f6;
+  --color-terciario: #22d4fd;
+  --color-hover: #272727;
+
+  --fuente-montserrat: "Montserrat", sans serif;
+  --fuente-krona: "Krona One", sans serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +17,8 @@
 
 body {
   box-sizing: border-box;
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
 }
 
 .header {
@@ -21,10 +31,11 @@ body {
 }
 
 .header__menu__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuente-montserrat);
   font-size: 24px;
   font-weight: 600;
-  color: #22d4fd;
+  color: var(--color-terciario);
+  text-decoration: none;
 }
 
 .titulo-destaque {
@@ -47,12 +58,15 @@ body {
 
 .presentacion__contenido__titulo {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fuente-krona);
 }
 
+.titulo-destaque{
+  color: var(--color-terciario);
+}
 .presentacion__contenido__texto {
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces {
@@ -64,7 +78,7 @@ body {
 }
 
 .presentacion__enlaces__subtitulos {
-  font-family: "Krona One";
+  font-family: var(--fuente-krona);
   font-size: 24px;
   font-weight: 400;
 }
@@ -77,23 +91,23 @@ body {
   font-weight: 600;
   padding: 21.5px 0;
   text-decoration: none;
-  color: #f6f6f6;
-  font-family: "Montserrat", sans-serif;
-  border: 2px solid #22d4fd;
+  color: var(--color-secundario);
+  font-family: var(--fuente-montserrat);
+  border: 2px solid var(--color-terciario);
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
 .presentacion__enlaces__link:hover {
-  background-color: #272727;
+  background-color: var(--color-hover);
 }
 
 .footer {
-  background-color: #22d4fd;
+  background-color: var(--color-terciario);
   padding: 24px;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
+  font-family: var(--fuente-montserrat);
+  color: var(--color-primario );
   text-align: center;
   font-size: 24px;
   font-weight: 400;
