@@ -78,7 +78,7 @@ body {
   gap: 32px;
 }
 
-.presentacion__enlaces__subtitulos {
+.presentacion__enlaces__subtitulo {
   font-family: var(--fuente-krona);
   font-size: 1.5rem;
   font-weight: 400;
